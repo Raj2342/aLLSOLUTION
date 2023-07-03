@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title> form</title>
+<meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />
+<meta name="description" content="This document is an example of JavaScript Form Validation using a sample registration form. " />
+<link rel='stylesheet' href='./form.css' type='text/css' />
+</head>
+<body onload="document.registration.userid.focus();">
+<h1>Registration Form</h1>
+Use tab keys to move from one input field to the next.
+<form name='registration' onSubmit="return formValidation();">
+<ul>
+   phone no.: <input type="tel" id="phone" name="phone" placeholder="123-45-678" >
+    <li><input type="text" name="userid" size="12" /></li>
+<li><label for="passid">Password:</label></li>
+<li><input type="password" name="passid" size="12" /></li>
+<li><label for="username">Name:</label></li>
+<li><input type="text" name="username" size="50" /></li>
+<li><input type="text" name="address" size="50" /></li>
+
+<li><label for="age">age</label></li>
+<li><input type="text" name="zip" /></li>
+<li><label for="email">Email:</label></li>
+<li><input type="text" name="email" size="50" /></li>
+<li><label id="gender">Sex:</label></li>
+<li><input type="radio" name="msex" value="Male" /><span>Male</span></li>
+<li><input type="radio" name="fsex" value="Female" /><span>Female</span></li>
+date :<input type="date" id="birthday" name="birthday">
+color piker :<input type="color" id="favcolor" name="favcolor" value="#ff0000">
+<li><input type="submit" name="submit" value="Submit" /></li>
+</ul>
+</form>
+</body>
+</html>
